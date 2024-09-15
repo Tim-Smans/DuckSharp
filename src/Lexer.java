@@ -1,10 +1,10 @@
 import models.Position;
-import models.Token;
+import models.tokens.Token;
 import models.errors.Error;
 import models.errors.IllegalCharError;
-import tokens.TokenResult;
+import models.tokens.TokenResult;
 import utils.Constants;
-import tokens.TokenTypes;
+import models.tokens.TokenTypes;
 
 import java.util.ArrayList;
 import java.util.Arrays;

@@ -1,13 +1,13 @@
 package models.nodes;
 
-import models.Token;
+import models.tokens.Token;
 
-public class BinaryOpNode {
+public class BinaryOpNode extends Node {
 
-    private final NumberNode leftNode, rightNode;
+    private final Node leftNode, rightNode;
     private final Token operatorToken;
 
-    public BinaryOpNode(Token operatorToken, NumberNode leftNode, NumberNode rightNode) {
+    public BinaryOpNode(Node leftNode, Token operatorToken, Node rightNode) {
         this.operatorToken = operatorToken;
         this.leftNode = leftNode;
         this.rightNode = rightNode;

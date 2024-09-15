@@ -24,6 +24,13 @@ public class Position {
         return line;
     }
 
+    public int getColumn() {
+        return col;
+    }
+    public String getFileText() {
+        return fileText;
+    }
+
     public String getFileName() {
         return fileName;
     }

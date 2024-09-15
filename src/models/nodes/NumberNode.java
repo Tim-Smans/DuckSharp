@@ -1,8 +1,8 @@
 package models.nodes;
 
-import models.Token;
+import models.tokens.Token;
 
-public class NumberNode {
+public class NumberNode extends Node {
 
     private final Token token;
 

@@ -1,6 +1,7 @@
 package models.errors;
 
 import models.Position;
+import utils.Utils;
 
 public class Error {
 
@@ -31,6 +32,8 @@ public class Error {
 
     @Override
     public String toString() {
-        return errorName + ": " + details + "\nFile:" + posStart.getFileName() + " - Line: " + getPosStart().getLine();
+        return errorName + ": " + details +
+                "\nFile:" + posStart.getFileName() + " - Line: " + getPosStart().getLine() +
+                "\n\n" + Utils.stringWithArrows(posStart.getFileText(), posStart, posEnd);
     }
 }

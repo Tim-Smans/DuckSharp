@@ -1,6 +1,5 @@
-package tokens;
+package models.tokens;
 
-import models.Token;
 import models.errors.Error;
 
 import java.util.ArrayList;

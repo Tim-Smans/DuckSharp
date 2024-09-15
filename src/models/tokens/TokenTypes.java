@@ -1,4 +1,4 @@
-package tokens;
+package models.tokens;
 
 public class TokenTypes {
     public static final String TT_INT = "INT";
